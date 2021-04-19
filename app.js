@@ -15,38 +15,17 @@ for (let i = 0; i < 225; i++) {
 
 const squares = Array.from(document.querySelectorAll('.grid div'));
 
-const alienInvaders = [
-	0,
-	1,
-	2,
-	3,
-	4,
-	5,
-	6,
-	7,
-	8,
-	9,
-	15,
-	16,
-	17,
-	18,
-	19,
-	20,
-	21,
-	22,
-	23,
-	24,
-	30,
-	31,
-	32,
-	33,
-	34,
-	35,
-	36,
-	37,
-	38,
-	39,
-];
+// create alienInvaders array
+var alienInvaders = [];
+for (let i = 0; i < width - 5; i++) {
+	alienInvaders.push(i);
+}
+for (let i = width; i < width * 2 - 5; i++) {
+	alienInvaders.push(i);
+}
+for (let i = 2 * width; i < width * 3 - 5; i++) {
+	alienInvaders.push(i);
+}
 
 draw = () => {
 	for (let i = 0; i < alienInvaders.length; i++) {
