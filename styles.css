@@ -1,0 +1,32 @@
+.grid {
+	width: 300px;
+	height: 300px;
+	border: solid black 1px;
+	background-image: url('background.gif');
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.grid div {
+	width: 20px;
+	height: 20px;
+}
+
+.invader {
+	background-image: url('invader.png');
+	background-repeat: no-repeat;
+}
+
+.shooter {
+	background-image: url('ship.png');
+	background-repeat: no-repeat;
+}
+
+.laser {
+	background-color: yellow;
+	border-radius: 50%;
+}
+
+.boom {
+	background-color: black;
+}
